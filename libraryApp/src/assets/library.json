@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "JavaScript Bible",
+    "author": "Danny Goodman/ Michael Morrison",
+    "saved": false,
+    "img": "../../assets/books/jsBible.jpeg"
+  },
+  {
+    "id": "2",
+    "name": "Angular: Up and Running",
+    "author": "Shyam Seshadri",
+    "saved": true,
+    "img": "../../assets/books/angular.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Modern Front-end Architecture",
+    "author": "Ryan Lanciaux",
+    "saved": true,
+    "img": "../../assets/books/architecture.jpeg"
+  },
+  {
+    "id": "4",
+    "name": "Frontend Development: The Ultimate Guide",
+    "author": "Bin Uzayr Sufyan",
+    "saved": true,
+    "img": "../../assets/books/ultimateGuide.jpeg"
+  },
+  {
+    "id": "5",
+    "name": "HTML & CSS: Design and Build Web Sites",
+    "author": "Jon Duckett",
+    "saved": false,
+    "img": "../../assets/books/html.jpeg"
+  },
+  {
+    "id": "6",
+    "name": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "saved": false,
+    "img": "../../assets/books/goodParts.png"
+  }
+]

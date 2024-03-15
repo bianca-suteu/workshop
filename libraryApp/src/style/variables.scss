@@ -1,0 +1,16 @@
+/*** Layout ***/
+$mobile_min: '(min-width: 1024px)';
+$mobile_max: '(max-width: 1023px)';
+
+$header: 100px;
+/*** Colors ***/
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+$grey-light: #f8f8f8;
+$gray-medium: rgb(195, 195, 196);
+
+$transparent: rgba(255, 255, 255, 0);
+
+$blue: #007aff;
+$blue-dark: rgba($blue, 50%);

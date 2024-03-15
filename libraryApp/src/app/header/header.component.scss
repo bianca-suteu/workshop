@@ -1,0 +1,61 @@
+@use '../../style/variables.scss';
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: variables.$header;
+  background-color: variables.$blue;
+  border-bottom: 1px solid variables.$grey-light;
+  padding: 20px 40px;
+  color: variables.$white;
+  font-size: large;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  background: url('../../assets/COERA-logo-white.svg') no-repeat, center;
+}
+
+.menu {
+  display: flex;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 5px
+}
+
+.library-icon {
+  @extend .icon;
+  background: url('../../assets/library_books.svg') no-repeat, center;
+}
+
+.bookmark-icon {
+  @extend .icon;
+  background: url('../../assets/collections_bookmark.svg') no-repeat, center;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 20px;
+}
+
+.bookmark-number {
+  position: absolute;
+  padding: 1px;
+  top: 5px;
+  background-color: white;
+  color: variables.$blue;
+  color: black;
+  right: 10px;
+}

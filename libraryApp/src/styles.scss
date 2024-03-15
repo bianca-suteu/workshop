@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'style/reset.scss';
+@use 'style/variables.scss' as var;
+@use "style/utilities.scss" as util;
+
+.app-root {
+  cursor: default;
+  height: 100%;
+  width: 100%;
+  color: var.$black;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: var.$transparent;
+}
+
+.spacing--top {
+  padding-top: 10px;
+}
+
+h3,
+h4 {
+  color: var.$blue;
+  @include util.crop-text();
+}
+
+.button {
+  background-color: var.$blue;
+  height: 40px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  @extend .button;
+  margin-top: 20px;
+}
+
+a {
+  @extend .button;
+
+  &.active {
+    border-bottom: 1px solid white;
+  }
+}

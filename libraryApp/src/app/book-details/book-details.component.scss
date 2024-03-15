@@ -1,0 +1,24 @@
+:host {
+  padding: 0 20px 0 50px;
+}
+
+img {
+  height: 300px;
+  display: block;
+}
+
+.save-icon {
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+
+  &:not(.is-saved) {
+    background: center no-repeat url("../../assets/bookmark_add.svg");
+  }
+
+  &.is-saved {
+    background: center no-repeat url("../../assets/bookmark_added.svg");
+  }
+}

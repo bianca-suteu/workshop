@@ -1,0 +1,22 @@
+@use "../style/variables.scss";
+
+.main {
+  height: 100%;
+}
+
+.content-wrapper {
+  margin-top: calc(variables.$header + 40px);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 1000px;
+  min-height: 500px;
+  background-color: #f8f8f8;
+  border: 1px solid variables.$gray-medium;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 4px variables.$gray-medium;
+
+}

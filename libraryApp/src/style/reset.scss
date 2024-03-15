@@ -1,0 +1,36 @@
+@use './variables.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  text-decoration: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  -webkit-tap-highlight-color: variables.$transparent;
+}
+
+:focus {
+  outline: none;
+  -webkit-tap-highlight-color: variables.$transparent;
+}
+
+ul,
+blockquote {
+  margin: 0;
+  list-style-type: none;
+}
+
+h4 {
+  margin: 0;
+}
