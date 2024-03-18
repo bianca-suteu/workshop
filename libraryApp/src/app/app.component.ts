@@ -19,5 +19,4 @@ import {BookService} from './book.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Library App';
 }
