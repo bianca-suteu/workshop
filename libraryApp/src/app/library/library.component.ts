@@ -1,34 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {BookService} from '../book.service';
+import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {Book} from '../book.model';
-import {BookDetailsComponent} from '../book-details/book-details.component';
 
 @Component({
   selector: 'app-library',
   standalone: true,
-  imports: [CommonModule, BookDetailsComponent],
+  imports: [CommonModule],
   templateUrl: './library.component.html',
   styleUrl: './library.component.scss'
 })
-export class LibraryComponent implements OnInit {
-  books: Book[] = [];
-  book = <Book>{};
+export class LibraryComponent {
 
-  constructor(private bookService: BookService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.bookService.getBooks().subscribe(books => {
-      this.books = books;
-      this.selectBook(this.books[0]);
-    });
-  }
 
-  selectBook(selectedBook: Book) {
-    this.book = selectedBook;
-  }
-
-  updateBook(selectedBook: Book) {
-    this.bookService.updateBooks(selectedBook).subscribe();
-  }
 }
