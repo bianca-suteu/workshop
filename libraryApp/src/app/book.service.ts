@@ -25,7 +25,7 @@ export class BookService {
   }
 
   updateBooks(selectedBook: Book): Observable<Book[]> {
-    let index = this.findBookByIndex(selectedBook);
+    let index = this.findBookIndexById(selectedBook);
     this.books[index] = selectedBook;
     return of(this.books);
   }
@@ -43,7 +43,7 @@ export class BookService {
     return book;
   }
 
-  private findBookByIndex(selectedBook: Book) {
+  private findBookIndexById(selectedBook: Book) {
     return this.books.findIndex(book => book.id === selectedBook.id);
   }
 }

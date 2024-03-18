@@ -12,7 +12,7 @@
   border: 1px solid grey;
 }
 
-.primary-line {
+.book-name {
   border-top: 1px solid grey;
   cursor: pointer;
   display: flex;
@@ -28,8 +28,4 @@
   &.is-saved {
     background: center no-repeat url("../../assets/star.svg");
   }
-}
-
-.book-details {
-  width: 100%;
 }
